@@ -38,6 +38,14 @@
         <!-- partial -->
         <div class="main-panel">
             <div class="content-wrapper">
+
+                @if(session()->has('message'))
+                    <div class="alert alert-success">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+                        {{session()->get('message')}}
+                    </div>
+                @endif
+
                 <div class="div_center">
                     <h1 class="font_size">Add Product</h1>
 
@@ -67,8 +75,11 @@
                         <div class="div_design">
                             <label>Product Catagory : </label>
                             <select class="text_color" name="catagory" required="">
-                                <option value="" selected="">Add a catagory here
-                                <option>shirt</option>
+                                <option value="" selected="">Add a catagory here</option>
+
+                                @foreach($catagory as $catagory)
+                                <option value="{{$catagory->catagory_name}}">{{$catagory->catagory_name}}</option>
+                                @endforeach
                             </select>
                         </div>
                         <div class="div_design">
