@@ -52,6 +52,8 @@
                         <th class="th_deg">Price</th>
                         <th class="th_deg">Discount Price</th>
                         <th class="th_deg">Product Image</th>
+                        <th class="th_deg">Delete</th>
+                        <th class="th_deg">Edit</th>
                     </tr>
 
                     @foreach($product as $product)
@@ -65,6 +67,8 @@
                         <td>
                             <img class="img_size" src="/product/{{$product->image}}">
                         </td>
+                        <td><a class="btn btn-danger" href="{{url('delete_product',$product->id)}}">Delete</a></td>
+                        <td><a class="btn btn-success" href="">Edit</a></td>
                     </tr>
                     @endforeach
 
