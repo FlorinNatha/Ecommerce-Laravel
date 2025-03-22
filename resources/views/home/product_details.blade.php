@@ -55,9 +55,9 @@
                      </h6>
                   @endif
 
-                  <h6>Product Catagory :  {{$product->catagory}}</h6>
-                  <h6>Product Details :  {{$product->description}}</h6>
-                  <h6>Available quantity :  {{$product->quantity}}</h6>
+                  <h6>Product Catagory  :  {{$product->catagory}}</h6>
+                  <h6>Product Details  :  {{$product->description}}</h6>
+                  <h6>Available quantity  :  {{$product->quantity}}</h6>
                   
                   <a href="" class="btn btn-primary">Add to Cart</a>
 
