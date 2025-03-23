@@ -55,6 +55,12 @@
          <!-- end header section -->
          
       
+        @if(session()->has('message'))
+            <div class="alert alert-success">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+                {{session()->get('message')}}
+            </div>
+        @endif
 
 
       <div class="center">
@@ -90,8 +96,13 @@
 
         <div>
             <h1 class="total_deg">Total Price : ${{$totalprice}}</h1>
-            
-        </div>
+       </div>
+       <div>
+            <h1 style="font-size: 25px; padding-bottom: 15px;">Proceed to Order</h1>
+            <a href="{{url('cash_order')}}" class="btn btn-danger">Cash On Delivery</a>
+            <a href="" class="btn btn-danger">Pay Using Card</a>
+
+       </div>
 
       </div>
       
