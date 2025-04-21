@@ -83,9 +83,12 @@ class AdminController extends Controller
             $request->image->move('product',$imagename);  //public folder eke product kiyla folder ekk hadn oni
             $product->image=$imagename;
         }
-        
-
+       
         $product->save();
         return redirect()->back()->with('message','Product Updated Successfully');
+    }
+
+    public function order(){
+        return view('admin.order');
     }
 }
