@@ -40,6 +40,8 @@ route::post('/update_product_confirm/{id}',[AdminController::class,'update_produ
 
 route::get('/order',[AdminController::class,'order']);
 
+route::get('/delivered/{id}',[AdminController::class,'delivered']);
+
 
 
 
