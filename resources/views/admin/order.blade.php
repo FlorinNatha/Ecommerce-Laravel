@@ -53,6 +53,7 @@
                         <th style="padding: 10px;">Delivery Status</th>
                         <th style="padding: 10px;">Image</th>
                         <th style="padding: 10px;">Delivered</th>
+                        <th style="padding: 10px;">Send Email</th>
                     </tr>
 
                         @foreach($order as $order)
