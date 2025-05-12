@@ -101,4 +101,8 @@ class AdminController extends Controller
         $order->save();
         return redirect()->back();
     }
+
+    public function send_email($id){
+        return view('admin.email_info');
+    }
 }
