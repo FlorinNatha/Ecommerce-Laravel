@@ -77,6 +77,9 @@
                                 <p style="color: green;">Delivered</p>
                             @endif
                         </td>
+                        <td>
+                            <a href="{{url('send_email',$order->id)}}" class="btn btn-info">Send Email</a>
+                        </td>
                     </tr>
                         @endforeach
                 </table>

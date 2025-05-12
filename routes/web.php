@@ -42,6 +42,7 @@ route::get('/order',[AdminController::class,'order']);
 
 route::get('/delivered/{id}',[AdminController::class,'delivered']);
 
+route::get('/send_email/{id}',[AdminController::class,'send_email']);
 
 
 
