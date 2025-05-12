@@ -17,6 +17,7 @@
         
         <div class="main-panel">
             <div class="content-wrapper">
+                <h1>Send Email to {{$order->email}}</h1>
             </div>
         </div>
 

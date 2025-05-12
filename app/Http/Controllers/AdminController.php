@@ -103,6 +103,7 @@ class AdminController extends Controller
     }
 
     public function send_email($id){
-        return view('admin.email_info');
+        $order=order::find($id);
+        return view('admin.email_info',compact('order'));
     }
 }
