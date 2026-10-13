@@ -16,12 +16,23 @@
             padding-bottom: 40px;
         }
         .text_color{
-            color: black;
-            padding-bottom: 20px;
+            color: black !important;
+            background-color: #ffffff !important;
+            padding: 8px 12px;
+            width: 260px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+        select.text_color option {
+            color: black !important;
+            background-color: #ffffff !important;
         }
         label{
             display: inline-block;
             width: 200px;
+            font-weight: 500;
+            text-align: left;
         }
         .div_design{
             padding-bottom: 15px;
@@ -78,8 +89,8 @@
                             <label>Product Catagory : </label>
                             <select class="text_color" name="catagory" required="">
                                 <option value="{{$product->catagory}}" selected="">{{$product->catagory}}</option>
-                                @foreach($catagory as $catagory)
-                                <option value="{{$catagory->catagory_name}}">{{$catagory->catagory_name}}</option>
+                                @foreach($catagory as $cat)
+                                <option value="{{$cat->catagory_name}}">{{$cat->catagory_name}}</option>
                                 @endforeach
                                 
                             </select>
