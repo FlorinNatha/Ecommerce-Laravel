@@ -76,5 +76,10 @@ A fully-featured e-commerce web application built with Laravel, designed to prov
 - `app/Models/`: Contains models like `User`, `Product`, `Order`, `Cart`, and `Catagory`.
 - `app/Http/Controllers/`: Contains `AdminController` for backend management and `HomeController` for the user-facing storefront.
 
+## 📖 Comprehensive Documentation & Workflow
+For an in-depth breakdown of all user features, admin dashboard capabilities, database relationships, and Mermaid system workflows, see:
+👉 **[DOCUMENTATION.md](DOCUMENTATION.md)**
+
 ## 📄 License
 This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
